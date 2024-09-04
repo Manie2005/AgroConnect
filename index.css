@@ -1,0 +1,317 @@
+/* Custom styles for the navbar */
+.navbar-brand {
+    font-weight: bold;
+}
+.navbar{
+    background-color: #4caf50 !important;
+}
+.nav-link {
+    color: #ffffff !important; /* Black text for links */
+}
+.nav-link:hover {
+    color: #ffeb3b !important; /* Black text for links */
+}
+.btn-primary {
+    background-color: white !important; /* White background */
+    color: #8d6e63 !important; /* Brown text */
+    border-color: brown !important; /* Brown border */
+}
+
+.btn-primary:hover {
+    background-color: #4caf50 !important; /* Slightly off-white background on hover */
+    color: #ffffff !important; /* Brown text on hover */
+    border-color: #ffffff !important; /* Brown border on hover */
+}
+
+/* Main Body Section Styles */
+.main-body {
+    background: url('pic1.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.main-body h1 {
+    font-size: 2.5rem; /* Adjusted for responsiveness */
+font-weight: bolder !important;
+color: #4caf50 !important;
+}
+
+.main-body p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.main-body .btn-light {
+    color: #ffffff;
+    background-color: #8d6e63;
+    border-color: black;
+}
+
+.main-body .btn-light:hover {
+    background-color: white;
+    color: brown;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-body h1 {
+        font-size: 2.5rem; /* Smaller font size on smaller screens */
+    }
+
+    .main-body p {
+        font-size: 1.1rem; /* Adjusted for readability on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .main-body h1 {
+        font-size: 2rem; /* Even smaller font size on extra small screens */
+    }
+
+    .main-body p {
+        font-size: 1rem; /* Adjusted for readability on extra small screens */
+    }
+}
+.cta-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+
+.cta-description {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.cta-btn-primary {
+    background-color: #4caf50 !important; /* Green background */
+    color: #ffffff !important; /* White text */
+    border-color: #4caf50 !important; /* Green border */
+}
+
+.cta-btn-primary:hover {
+    background-color: #388e3c !important; /* Darker green on hover */
+    border-color: #388e3c !important; /* Darker green border on hover */
+}
+
+.cta-btn-secondary {
+    background-color: #8d6e63; /* Custom color for secondary button */
+    color: #ffffff; /* White text */
+    border-color: #8d6e63; /* Custom border color */
+}
+
+.cta-btn-secondary:hover {
+    background-color: #6d4c41; /* Darker shade on hover */
+    border-color: #6d4c41; /* Darker border on hover */
+}
+.testimonials-carousel {
+    background-color: #4caf50 !important; /* Green background */
+    padding: 60px 0;
+    color: white; /* Ensure text is readable on the green background */
+}
+
+.testimonials-carousel .carousel-item {
+    text-align: center;
+}
+
+.testimonials-carousel .carousel-inner {
+    margin: 0 auto;
+}
+
+.testimonials-carousel img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 5px solid white; /* Optional: adds a white border around the images for contrast */
+    border-radius: 50%; /* Ensures images are round */
+}
+
+blockquote {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for readability */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    color: #333; /* Dark text inside blockquote for readability */
+}
+
+.blockquote-footer {
+    font-size: 1rem;
+    color: #333;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #8d6e63; /* White background for navigation icons */
+    border-radius: 50%;
+}
+.features-benefits {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.features-benefits .icon {
+    color: #4caf50; /* Green color for icons */
+}
+
+.features-benefits h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.features-benefits h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4caf50;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.features-benefits p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.features-benefits .col-md-6 {
+    margin-bottom: 30px;
+}
+
+.features-benefits .icon i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+/* FontAwesome icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+.faqs {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 60px 0;
+}
+
+.faqs h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-header {
+    background-color: #4caf50; /* Green background for headers */
+    color: #fff;
+}
+
+.card-header .btn-link {
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+.card-header .btn-link:hover {
+    color: #e0e0e0; /* Light grey color on hover */
+}
+
+.card-body {
+    font-size: 1rem;
+    color: #555;
+}
+.contact-blog {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 60px 0;
+}
+
+.contact-blog h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-blog .form-group label {
+    font-weight: bold;
+}
+
+.contact-blog .form-control {
+    border-radius: 0.25rem;
+}
+
+.contact-blog .btn-primary {
+    background-color: #4caf50; /* Green background */
+    border-color: #4caf50; /* Green border */
+}
+
+.contact-blog .btn-primary:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.card {
+    border: none;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100px; /* Ensure the image scales properly */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.card-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.btn-success {
+    background-color: #4caf50; /* Green background */
+    border-color: #4caf50; /* Green border */
+}
+
+.btn-success:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+.footer {
+    background-color: #343a40; /* Dark background for footer */
+}
+
+.social-icons a {
+    color: #45a049 !important;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #adb5bd; /* Light gray color on hover */
+}
+
+.form-control {
+    border-radius: 0.25rem;
+}
+
+.btn-primary, .btn-success {
+    background-color: #4caf50; /* Green background */
+    border-color: #4caf50; /* Green border */
+}
+
+.btn-primary:hover, .btn-success:hover {
+    background-color: #45a049; /* Darker green on hover */
+    border-color: #45a049; /* Darker green border on hover */
+}
+
+.btn-success {
+    margin-left: 10px;
+}
+/*  */

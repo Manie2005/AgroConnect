@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroConnect</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link to custom CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><strong>AgroConnect</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+            <a class="btn btn-primary my-2 my-sm-0" href="signin.html" role="button">Sign In</a>
+        </div>
+    </nav>
+    <section class="main-body">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-sm-12">
+                    <h1 class="display-4">Transform Your Farming with Direct Market Access and Real-Time Insights</h1>
+                    <p class="lead">Unlock the full potential of your farm with AgroConnect. Connect directly with buyers, access up-to-date market prices, and receive expert farming advice—all at your fingertips through our SMS and app platforms. Experience a new era of farming efficiency and profitability today!</p>
+                    <a class="btn btn-light btn-lg" href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta-section py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="cta-title">Ready to Transform Your Farming Experience?</h2>
+            <p class="cta-description">Join AgroConnect today to connect directly with buyers, access real-time market prices, and receive expert farming advice. Take the first step towards a more efficient and profitable farming journey.</p>
+            <a class="btn cta-btn-primary btn-lg mx-2" href="signup.html">Sign Up Now</a>
+            <a class="btn cta-btn-secondary btn-lg mx-2" href="#">Learn More</a>
+        </div>
+    </section>
+    <section class="testimonials-carousel py-5 bg-light">
+        <div class="container text-center">
+            <h3 class="display-4">Success stories from the field</h3>
+            <div id="testimonialsCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="pic2.jpg" class="rounded-circle mb-3" alt="John Doe">
+                            <blockquote class="blockquote">
+                                <p>"AgroConnect has revolutionized the way I sell my crops. I now get better prices and reach more buyers directly."</p>
+                                <footer class="blockquote-footer">Tayo Segun, Farmer
+                                    <br> <a href="tel:+1234567890">+234 (0) 806 091 8471</a>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="pic3.jpg" class="rounded-circle mb-3" alt="Jane Smith">
+                            <blockquote class="blockquote">
+                                <p>"The real-time market prices and farming advice have been invaluable. Highly recommend AgroConnect!"</p>
+                                <footer class="blockquote-footer">Janet Bassey , Crop Buyer
+                                    <br> <a href="tel:+1987654321">+234 (0) 703 690 9093</a>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="pic4.jpg" class="rounded-circle mb-3" alt="Bob Johnson">
+                            <blockquote class="blockquote">
+                                <p>"A fantastic platform that makes it easier to connect with farmers and streamline our purchasing process."</p>
+                                <footer class="blockquote-footer">Bob Johnson, Agro Supply Store
+                                    <br> <a href="tel:+1122334455">+234 (0) 815 573 0305</a>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonialsCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#testimonialsCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="features-benefits py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center display-4 mb-5">Key Features & Benefits</h2>
+            <div class="row">
+                <!-- Feature 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="text-center">
+                        <div class="icon mb-3">
+                            <i class="fas fa-users fa-3x"></i>
+                        </div>
+                        <h3>Direct Farmer-Buyer Connections</h3>
+                        <p>By eliminating intermediaries, farmers in Akwa Ibom and across Nigeria can connect directly with buyers, ensuring better prices and more efficient transactions.</p>
+                    </div>
+                </div>
+                <!-- Feature 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="text-center">
+                        <div class="icon mb-3">
+                            <i class="fas fa-chart-line fa-3x"></i>
+                        </div>
+                        <h3>Real-Time Market Prices</h3>
+                        <p>Access the latest market prices in real-time to make informed decisions on when and where to sell your produce, maximizing your profits.</p>
+                    </div>
+                </div>
+                <!-- Feature 3 -->
+                <div class="col-lg-4 mb-4">
+                    <div class="text-center">
+                        <div class="icon mb-3">
+                            <i class="fas fa-sms fa-3x"></i>
+                        </div>
+                        <h3>Expert Farming Advice</h3>
+                        <p>Receive valuable farming tips and advice via SMS to improve crop yields and farming practices, tailored specifically for the conditions in Nigeria and Akwa Ibom.</p>
+                    </div>
+                </div>
+                <!-- Feature 4 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="text-center">
+                        <div class="icon mb-3">
+                            <i class="fas fa-mobile-alt fa-3x"></i>
+                        </div>
+                        <h3>User-Friendly Mobile App</h3>
+                        <p>Our mobile app is designed to be intuitive and easy to use, allowing farmers to manage their transactions and access information from anywhere.</p>
+                    </div>
+                </div>
+                <!-- Feature 5 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="text-center">
+                        <div class="icon mb-3">
+                            <i class="fas fa-hand-holding-usd fa-3x"></i>
+                        </div>
+                        <h3>Financial Insights and Support</h3>
+                        <p>Get insights into financial management and access support to better handle your earnings and investments in the agricultural sector.</p>
+                    </div>
+                </div>
+                <!-- Feature 6 -->
+                <div class="col-lg-4 mb-4">
+                    <div class="text-center">
+                        <div class="icon mb-3">
+                            <i class="fas fa-people-arrows fa-3x"></i>
+                        </div>
+                        <h3>Community and Support</h3>
+                        <p>Join a vibrant community of local farmers and buyers, and access support from AgroConnect to address any challenges you may face.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="faqs py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center display-4 mb-4">Frequently Asked Questions</h2>
+            <div id="faqAccordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is AgroConnect?
+                            </button>
+                        </h5>
+                    </div>
+    
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            AgroConnect is a software platform designed to connect farmers directly with buyers, provide real-time market prices, and offer expert farming advice through SMS and our app.
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                How does AgroConnect benefit farmers?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Farmers benefit from direct connections with buyers, access to real-time market prices, and expert farming advice which helps in improving yields and profitability.
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                How can I access the farming advice?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Farming advice is provided via SMS and through our mobile app, ensuring that you can receive important information no matter where you are.
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Is there a cost to use AgroConnect?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            AgroConnect offers both free and premium features. While basic services are available at no cost, advanced features and support may require a subscription or payment.
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                How do I get started with AgroConnect?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Getting started is easy! Simply sign up through our website or mobile app, follow the setup instructions, and start exploring the features that can benefit your farming operations.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-blog py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Form -->
+                <div class="col-lg-6 mb-4">
+                    <h2 class="display-4 mb-4">Contact Us</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+    
+                <!-- Blog/News Article -->
+                <div class="col-lg-6 mb-4">
+                    <h2 class="display-4 mb-4">Latest News</h2>
+                    <div class="card">
+                        <img src="pic5.jpg" class="card-img-top img-fluid" alt="News Image" height="100px">
+                        <div class="card-body">
+                            <h5 class="card-title">Exciting Developments in AgroConnect</h5>
+                            <p class="card-text">AgroConnect is thrilled to announce several new features and improvements that will enhance the experience for farmers and buyers alike. Stay tuned for more updates and learn how these changes can benefit your farming operations.</p>
+                            <a href="#" class="btn btn-success">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Social Media Links -->
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-uppercase">Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" class="text-white me-3" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f fa-2x"></i>
+                        </a>
+                        <a href="https://twitter.com" class="text-white me-3" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="https://instagram.com" class="text-white me-3" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="https://linkedin.com" class="text-white me-3" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Newsletter Signup -->
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-uppercase">Newsletter Signup</h5>
+                    <form action="#" method="post">
+                        <div class="form-row">
+                            <div class="col-8 mb-2">
+                                <input type="email" class="form-control" id="newsletterEmail" placeholder="Enter your email" required>
+                            </div>
+                            <div class="col-4 mb-2">
+                                <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+   
+    
+                <!-- Search Form -->
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-uppercase">Search</h5>
+                    <form class="d-flex" action="/search" method="get">
+                        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p class="mb-0">&copy; 2024 AgroConnect. All rights reserved.</p>
+            </div>
+            
+        </div>
+    </footer>
+    
+    
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7fafc;
+}
+
+.navbar {
+    background-color: #4caf50 !important; /* Dark color for navbar */
+}
+
+.navbar-brand {
+    color: #f7fafc;
+}
+
+/* Sign Up Section */
+.signup-section {
+    min-height: 100vh;
+    background: url('pic1.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.card {
+    border-radius: 0.5rem;
+}
+
+.card-title {
+    color: #4caf50;
+    font-size: 1.75rem;
+}
+
+.btn-primary {
+    background-color: #4caf50 !important;
+    border-color: #2d3748 !important;
+}
+
+.btn-primary:hover {
+    background-color: #2b6cb0;
+    border-color: #2b6cb0;
+}
+
+.text-muted {
+    color: #6c757d;
+}
+
+.btn-link {
+    color: #4caf50;
+}
+
+.btn-link:hover {
+    color: #2b6cb0;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: #2d3748 !important;
+    color: #f7fafc;
+}

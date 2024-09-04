@@ -1,0 +1,58 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7fafc;
+}
+
+.navbar {
+    background-color: #45a049 !important; /* Dark color for navbar */
+}
+
+.navbar-brand {
+    color: #f7fafc;
+}
+
+/* Sign In Section */
+.signin-section {
+    min-height: 100vh;
+    background: url('pic1.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.card {
+    border-radius: 0.5rem;
+}
+
+.card-title {
+    color: #45a049;
+    font-size: 1.75rem;
+}
+
+.btn-primary {
+    background-color: #45a049;
+    border-color: black;
+}
+
+.btn-primary:hover {
+    background-color: #8d6e63;
+    border-color: white;
+}
+
+.text-muted {
+    color: #6c757d;
+}
+
+.btn-link {
+    color: #45a049;
+}
+
+.btn-link:hover {
+    color: #2b6cb0;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: #2b6cb0;
+    color: #f7fafc;
+}

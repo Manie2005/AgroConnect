@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - AgroConnect</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS -->
+    <link href="signup.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><strong>AgroConnect</strong></a>
+    </nav>
+
+    <section class="signup-section d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h2 class="card-title text-center mb-4">Sign Up</h2>
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="username">Username</label>
+                                        <input type="text" class="form-control" id="username" placeholder="Choose a username" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="email">Email address</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="password">Password</label>
+                                        <input type="password" class="form-control" id="password" placeholder="Create a password" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="confirm-password">Confirm Password</label>
+                                        <input type="password" class="form-control" id="confirm-password" placeholder="Confirm your password" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="role">I am a</label>
+                                    <select id="role" class="form-control" required>
+                                        <option value="" disabled selected>Choose your role</option>
+                                        <option value="farmer">Farmer</option>
+                                        <option value="buyer">Buyer</option>
+                                    </select>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="age">Age</label>
+                                        <input type="number" class="form-control" id="age" placeholder="Enter your age" min="16" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="state">State</label>
+                                        <select id="state" class="form-control" required>
+                                            <option value="" disabled selected>Select your state</option>
+                                            <!-- Example states -->
+                                            <option value="abuja">Akwa Ibom</option>
+                                            <option value="abuja">Cross-River</option>
+                                            <option value="abuja">Rivers</option>
+                                            <option value="abuja">Abia</option>
+                                            <option value="abuja">Bayelsa</option>
+                                            <option value="abuja">Edo</option>
+                                            <option value="lagos">Lagos</option>
+                                            <option value="abuja">Delta</option>
+
+                                            <!-- Add more states as needed -->
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="occupation">Current Occupation</label>
+                                    <input type="text" class="form-control" id="occupation" placeholder="Your current occupation" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="experience">How long have you been a farmer?</label>
+                                    <input type="text" class="form-control" id="experience" placeholder="E.g., 5 years" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="farm-size">How large is your farm?</label>
+                                    <input type="text" class="form-control" id="farm-size" placeholder="E.g., 10 hectares" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+                            </form>
+                            <div class="text-center mt-3">
+                                <p>Already have an account? <a href="signin.html" class="btn btn-link">Sign In</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p>&copy; 2024 AgroConnect. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

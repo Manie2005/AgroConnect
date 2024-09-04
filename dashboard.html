@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome icons -->
+    <style>
+        /* Custom styles based on the new color code #4caf50 */
+        body {
+            background-color: #f4f7f6; /* Light grey background */
+        }
+        .navbar-custom {
+            background-color: #4caf50; /* Primary green color */
+        }
+        .card-header-custom {
+            background-color: #4caf50; /* Primary green color */
+            color: #fff;
+        }
+        .card-custom {
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .btn-custom {
+            background-color: #28a745; /* Green color for buttons */
+            color: #fff;
+        }
+        .btn-custom:hover {
+            background-color: #218838; /* Darker green on hover */
+        }
+        .table-custom th {
+            background-color: #4caf50; /* Header color for tables */
+            color: #fff;
+        }
+        .list-group-item {
+            border: none;
+            border-radius: 0;
+            background-color: #f8f9fa;
+        }
+        .list-group-item:hover {
+            background-color: #e9ecef;
+        }
+        .sidebar {
+            padding: 0;
+            margin: 0;
+            margin-right: 20px; /* Adds some space to the right of the sidebar */
+            float: left; /* Float the sidebar to the left */
+            width: 25%; /* Fixed width for the sidebar */
+        }
+        .main-content {
+            float: right; /* Float the main content to the right */
+            width: 75%; /* Width for the main content */
+        }
+        .card-custom-wide {
+            width: 100%; /* Makes the card wider */
+        }
+        .dashboard-header {
+            font-weight: bold;
+            color: #000;
+        }
+        .clearfix {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <a class="navbar-brand text-white" href="#">AgroConnect</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="profile.html">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="logout.html">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3 sidebar">
+                <div class="card card-custom card-custom-wide">
+                    <div class="card-header card-header-custom">
+                        <h5 class="mb-0"><i class="fas fa-user"></i> Profile</h5>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Username:</strong> <span id="userName">John Doe</span></p>
+                        <p><strong>Email:</strong> <span id="userEmail">john.doe@example.com</span></p>
+                        <p><strong>Role:</strong> <span id="userRole">Farmer</span></p>
+                        <p><strong>State:</strong> <span id="userState">Rivers</span></p>
+                    </div>
+                </div>
+
+                <div class="card card-custom mt-4 card-custom-wide">
+                    <div class="card-header card-header-custom">
+                        <h5 class="mb-0"><i class="fas fa-link"></i> Quick Links</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="add_product.html"><i class="fas fa-plus"></i> Add New Product</a></li>
+                            <li class="list-group-item"><a href="listed_products.html"><i class="fas fa-list"></i> View Listed Products</a></li>
+                            <li class="list-group-item"><a href="profile.html"><i class="fas fa-user-edit"></i> Edit Profile</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9 main-content">
+                <div class="card card-custom card-custom-wide">
+                    <div class="card-header card-header-custom dashboard-header">
+                        <h5 class="mb-0"><i class="fas fa-box"></i> Add Product for Sale</h5>
+                    </div>
+                    <div class="card-body">
+                        <form id="addProductForm">
+                            <div class="form-group">
+                                <label for="productName">Product Name</label>
+                                <input type="text" class="form-control" id="productName" placeholder="Enter product name">
+                            </div>
+                            <div class="form-group">
+                                <label for="productCategory">Category</label>
+                                <select class="form-control" id="productCategory">
+                                    <option>Fruits</option>
+                                    <option>Vegetables</option>
+                                    <option>Grains</option>
+                                    <option>Livestock</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="productPrice">Price</label>
+                                <input type="number" class="form-control" id="productPrice" placeholder="Enter price">
+                            </div>
+                            <div class="form-group">
+                                <label for="productDescription">Description</label>
+                                <textarea class="form-control" id="productDescription" rows="3" placeholder="Enter product description"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-custom"><i class="fas fa-plus-circle"></i> Add Product</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card card-custom mt-4 card-custom-wide">
+                    <div class="card-header card-header-custom dashboard-header">
+                        <h5 class="mb-0"><i class="fas fa-list-ul"></i> Listed Products</h5>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-custom">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Category</th>
+                                    <th>Price</th>
+                                    <th>Description</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="productList">
+                                <!-- Product rows will be inserted here -->
+                                <tr>
+                                    <td>Sample Product</td>
+                                    <td>Fruits</td>
+                                    <td>$10</td>
+                                    <td>Sample description</td>
+                                    <td>
+                                        <button class="btn btn-custom btn-sm"><i class="fas fa-edit"></i> Edit</button>
+                                        <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Delete</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card card-custom mt-4 card-custom-wide">
+                    <div class="card-header card-header-custom dashboard-header">
+                        <h5 class="mb-0"><i class="fas fa-chart-line"></i> Statistics</h5>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Total Products Listed:</strong> <span id="totalProducts">12</span></p>
+                        <p><strong>Total Sales:</strong> <span id="totalSales">$5000</span></p>
+                        <p><strong>New Messages:</strong> <span id="newMessages">5</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Example JavaScript for dynamic data
+        document.addEventListener('DOMContentLoaded', function () {
+            // Replace with actual dynamic data fetching
+            const user = {
+                name: 'John Doe',
+                email: 'john.doe@example.com',
+                role: 'Farmer',
+                state: 'Rivers'
+            };
+            document.getElementById('userName').textContent = user.name;
+            document.getElementById('userEmail').textContent = user.email;
+            document.getElementById('userRole').textContent = user.role;
+            document.getElementById('userState').textContent = user.state;
+        });
+
+        document.getElementById('addProductForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Product added!');
+        });
+    </script>
+</body>
+</html>
